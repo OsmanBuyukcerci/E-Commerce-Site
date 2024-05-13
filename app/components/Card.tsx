@@ -30,7 +30,7 @@ const Card = () => {
 
         {/* Buttons */}
         <div className="flex gap-4 *:font-bold *:p-1 *:rounded-lg">
-          <a href="#" className="underline">
+          <a href="#" className="underline hover:no-underline">
             Details
           </a>
           <button className="bg-green-500 hover:bg-green-700">

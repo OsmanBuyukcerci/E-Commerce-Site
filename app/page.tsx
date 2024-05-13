@@ -1,9 +1,10 @@
 import SearchBar from "./components/SearchBar";
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center">
+    <main className="overflow-hidden flex flex-col items-center justify-center">
       <SearchBar />
 
       {/* Products */}
@@ -17,6 +18,9 @@ export default function Home() {
         <Card />
         <Card />
       </div>
+
+      {/* Footer */}
+      <Footer />
     </main>
   );
 }
