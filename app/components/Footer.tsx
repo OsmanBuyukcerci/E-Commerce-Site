@@ -5,7 +5,7 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-48 bg-slate-500/20 relative">
+    <div className="flex flex-col items-center justify-center w-screen h-48 bg-primary align-bottom">
       <div className="flex mb-4 justify-center items-top w-screen ">
         {/* Socials */}
         <div className="flex flex-col w-32 *:flex *:gap-1 *:w-min">
@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-div w-screen flex items-center justify-center absolute bottom-2">
+      <div className="footer-div w-screen flex justify-center">
         <small>All rights reserved ({year})© </small>
       </div>
     </div>

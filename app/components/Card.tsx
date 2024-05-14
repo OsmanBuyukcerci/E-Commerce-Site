@@ -12,7 +12,9 @@ const Card = () => {
       </div>
 
       {/* Product Name */}
-      <div className="w-full text-left text-lg font-bold">Milk</div>
+      <div className="w-full text-left text-lg font-bold line-clamp-1">
+        Milk
+      </div>
 
       {/* Product Description */}
       <div>
@@ -33,7 +35,7 @@ const Card = () => {
           <a href="#" className="underline hover:no-underline">
             Details
           </a>
-          <button className="bg-green-500 hover:bg-green-700">
+          <button className="bg-green hover:bg-dgreen">
             <svg
               className="fill-black"
               xmlns="http://www.w3.org/2000/svg"

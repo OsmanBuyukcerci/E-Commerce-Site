@@ -2,17 +2,14 @@ import React from "react";
 
 const SearchBar = () => {
   return (
-    <div className="flex items-center justify-center w-4/6 gap-4 my-8">
+    <div className="flex items-center justify-center w-screen gap-4 my-8">
       <input
         type="search"
         id="search-input"
-        className="w-full p-2 text-lg rounded-full border-2 border-slate-500/50"
+        className="w-2/6 p-2 text-lg rounded-full border-2 border-slate-500/50"
         placeholder="Search.."
       ></input>
-      <button
-        id="search-button"
-        className="rounded-full p-2 hover:bg-slate-500/20 "
-      >
+      <button id="search-button" className="rounded-full p-2 hover:bg-primary ">
         <svg
           className="fill-black"
           xmlns="http://www.w3.org/2000/svg"

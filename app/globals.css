@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes click {
+  from {
+    scale: 100%;
+  }
+  to {
+    scale: 80%;
+  }
+}
+
+button:active {
+  animation-name: click;
+  animation-duration: 50ms;
+  transition: ease-in-out;
+}
