@@ -1,7 +1,7 @@
 import PageLinks from "@/app/components/PageLinks";
 import Card from "../../components/Card";
 
-export default function Home({ params }) {
+export default function Home({ params }: any) {
   return (
     <main className="overflow-hidden flex flex-col items-center justify-center relative">
       {/* Products */}
