@@ -18,7 +18,10 @@ const config: Config = {
       primary: "#ff9e9e",
       secondary: "#fc3737",
       green: "#20c523",
-      dgreen: "#148117"
+      dgreen: "#15a418",
+      lyellow: "#ebe459",
+      black: "#000000",
+      blue: "#6a7fc1"
     }
   },
   plugins: [],

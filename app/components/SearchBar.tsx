@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchBar = () => {
   return (
-    <div className="flex items-center justify-center w-screen gap-4 my-8">
+    <div className="flex items-center justify-center w-screen gap-4">
       <input
         type="search"
         id="search-input"
