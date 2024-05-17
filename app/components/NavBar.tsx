@@ -4,16 +4,18 @@ import { useEffect } from "react";
 import SearchBar from "./SearchBar";
 
 const NavBar = () => {
-  document.addEventListener(
-    "scroll",
-    () => {
-      const nav_bar = document.getElementById("nav-bar");
-      if (nav_bar)
-        nav_bar.className =
-          "w-screen flex fixed top-0 justify-center p-4 bg-primary/80 text-white z-20 transition transition-all ease-in-out";
-    },
-    { once: true }
-  );
+  useEffect(() => {
+    document.addEventListener(
+      "scroll",
+      () => {
+        const nav_bar = document.getElementById("nav-bar");
+        if (nav_bar)
+          nav_bar.className =
+            "w-screen flex fixed top-0 justify-center p-4 bg-primary/80 text-white z-20 transition transition-all ease-in-out";
+      },
+      { once: true }
+    );
+  });
 
   return (
     <div
