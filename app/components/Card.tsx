@@ -4,7 +4,7 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div className="rounded-lg shadow-md transition ease-in-out flex flex-col gap-2 items-center justify-center p-4 w-64  bg-gradient-to-br from-primary via-accent to-secondary text-white relative">
+    <div className="rounded-lg shadow-md transition ease-in-out flex flex-col gap-2 items-center justify-center p-4 w-64  bg-gradient-to-br from-primary via-secondary to-primary text-white relative">
       <div className="flex">
         {/* Product Image */}
         <img
