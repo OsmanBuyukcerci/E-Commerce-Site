@@ -16,3 +16,10 @@ button:active {
   animation-duration: 50ms;
   transition: ease-in-out;
 }
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

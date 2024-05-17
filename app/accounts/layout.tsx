@@ -20,12 +20,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="overflow-hidden flex flex-col items-center justify-center">
-          <NavBar />
+        <div className="overflow-hidden flex flex-col items-center justify-center h-screen w-screen relative">
+          <div className="absolute top-0">
+            <NavBar />
+          </div>
 
-          {children}
+          <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-70%]">
+            {children}
+          </div>
 
-          {/* Footer */}
           <div className="absolute bottom-0">
             <Footer />
           </div>
