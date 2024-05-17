@@ -1,3 +1,5 @@
+"use client";
+
 import PageLinks from "@/app/components/PageLinks";
 import Card from "../../components/Card";
 
