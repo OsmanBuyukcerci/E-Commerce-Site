@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 
 const SearchBar = () => {
@@ -18,7 +16,7 @@ const SearchBar = () => {
       <input
         type="search"
         id="search-input"
-        className="w-full p-2 text-lg rounded-full border-2 border-slate-500/50 invisible"
+        className="w-full p-2 text-lg text-black rounded-full border-2 border-slate-500/50 invisible"
         placeholder="Search.."
       ></input>
       <button
