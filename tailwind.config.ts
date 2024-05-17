@@ -15,13 +15,16 @@ const config: Config = {
       },
     },
     colors: {
-      primary: "#ff9e9e",
-      secondary: "#fc3737",
+      primary: "#363B49",
+      secondary: "#9EA5BD",
+      accent: "#5F6995",
       green: "#20c523",
       dgreen: "#15a418",
       lyellow: "#ebe459",
       black: "#000000",
-      blue: "#6a7fc1"
+      blue: "#6a7fc1",
+      gray: "#4f4f4f",
+      white: "#ffffff"
     }
   },
   plugins: [],

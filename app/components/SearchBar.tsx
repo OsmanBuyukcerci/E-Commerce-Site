@@ -1,17 +1,35 @@
-import React from "react";
+"use client";
+
+import { useState } from "react";
 
 const SearchBar = () => {
+  const [isSearchInputVisible, setIsSearchInputVisible] = useState(false);
+  const handleClickSearch = () => {
+    const search_input = document.getElementById("search-input");
+    if (search_input) {
+      if (!isSearchInputVisible) {
+        search_input.style.visibility = "visible";
+        setIsSearchInputVisible(true);
+      }
+    }
+  };
   return (
-    <div className="flex items-center justify-center w-screen gap-4">
+    <div className="flex absolute right-4 bottom-4 items-center justify-center gap-1">
       <input
         type="search"
         id="search-input"
-        className="w-2/6 p-2 text-lg rounded-full border-2 border-slate-500/50"
+        className="w-full p-2 text-lg rounded-full border-2 border-slate-500/50 invisible"
         placeholder="Search.."
       ></input>
-      <button id="search-button" className="rounded-full p-2 hover:bg-primary ">
+      <button
+        id="search-button"
+        className="rounded-full p-2 hover:bg-secondary/30 transition ease-in-out delay-75"
+        onClick={() => {
+          handleClickSearch();
+        }}
+      >
         <svg
-          className="fill-black"
+          className="fill-white"
           xmlns="http://www.w3.org/2000/svg"
           width="32"
           height="32"

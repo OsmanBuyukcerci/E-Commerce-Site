@@ -54,17 +54,21 @@ const page = () => {
           ></input>
         </div>
         <div className="w-full flex gap-4 items-center justify-end">
-          <a href="/accounts/login" className="text-sm text-blue">
-            Do you have a account? Login!
-          </a>
-          <button
-            type="submit"
-            id="submit-button"
-            name="submit-button"
-            className="w-1/6 py-2 bg-green hover:bg-dgreen rounded-lg font-bold"
-          >
-            Sign In
-          </button>
+          <div className="flex w-full">
+            <a href="/accounts/login" className="text-sm text-blue">
+              Do you have a account? Login!
+            </a>
+          </div>
+          <div className="flex w-full justify-end">
+            <button
+              type="submit"
+              id="submit-button"
+              name="submit-button"
+              className="p-2 bg-secondary hover:bg-accent active:primary text-white rounded-lg font-bold"
+            >
+              Sign In
+            </button>
+          </div>
         </div>
       </form>
     </div>

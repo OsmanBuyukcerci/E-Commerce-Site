@@ -5,7 +5,7 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-48 bg-primary inset-x-0">
+    <div className="flex flex-col items-center justify-center w-screen h-48 bg-primary inset-x-0 text-white">
       <div className="flex mb-4 justify-center items-top w-screen ">
         {/* Socials */}
         <div className="flex flex-col w-32 *:flex *:gap-1 *:w-min">
@@ -13,7 +13,7 @@ const Footer = () => {
 
           <a href="#" className="link-item">
             <svg
-              className="fill-black"
+              className="fill-white"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -26,7 +26,7 @@ const Footer = () => {
 
           <a href="#" className="link-item w-auto">
             <svg
-              className="fill-black"
+              className="fill-white"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -41,7 +41,7 @@ const Footer = () => {
 
           <a href="#" className="link-item">
             <svg
-              className="fill-black"
+              className="fill-white"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -57,7 +57,7 @@ const Footer = () => {
           <div className="font-bold text-lg underline">Contact Us</div>
           <div>
             <svg
-              className="fill-black"
+              className="fill-white"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
           <div>
             <svg
-              className="fill-black"
+              className="fill-white"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"

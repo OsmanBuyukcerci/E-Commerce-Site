@@ -39,7 +39,7 @@ const page = () => {
             type="submit"
             id="submit-button"
             name="submit-button"
-            className="px-2 py-2 bg-green hover:bg-dgreen rounded-lg font-bold"
+            className="px-2 py-2 bg-secondary hover:bg-accent active:primary text-white rounded-lg font-bold"
           >
             Login
           </button>

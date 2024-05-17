@@ -1,8 +1,10 @@
+"use client";
+
 import React from "react";
 
 const Card = () => {
   return (
-    <div className="shadow-md transition ease-in-out flex flex-col gap-2 items-center justify-center p-4 w-64">
+    <div className="rounded-lg shadow-md transition ease-in-out flex flex-col gap-2 items-center justify-center p-4 w-64  bg-gradient-to-br from-primary via-accent to-secondary text-white relative">
       <div className="flex">
         {/* Product Image */}
         <img
@@ -35,17 +37,6 @@ const Card = () => {
           <a href="#" className="underline hover:no-underline">
             Details
           </a>
-          <button className="bg-green hover:bg-dgreen">
-            <svg
-              className="fill-black"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path d="M5 22h14c1.103 0 2-.897 2-2V9a1 1 0 0 0-1-1h-3V7c0-2.757-2.243-5-5-5S7 4.243 7 7v1H4a1 1 0 0 0-1 1v11c0 1.103.897 2 2 2zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v1H9V7zm-4 3h2v2h2v-2h6v2h2v-2h2l.002 10H5V10z"></path>
-            </svg>
-          </button>
         </div>
       </div>
     </div>
