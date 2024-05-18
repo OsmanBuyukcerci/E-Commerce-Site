@@ -23,7 +23,7 @@ export default function RootLayout({
         <div className="overflow-hidden flex flex-col items-center justify-center">
           <NavBar />
 
-          {children}
+          <div className="my-20">{children}</div>
 
           {/* Footer */}
           <div className="absolute bottom-0">
