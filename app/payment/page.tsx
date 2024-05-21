@@ -149,6 +149,7 @@ const page = () => {
             </div>
           </form>
         </div>
+
         <div
           id="card-preview"
           className="bg-gradient-to-br from-primary via-secondary to-primary rounded-lg relative *:text-white *:font-bold shadow-md"
@@ -177,6 +178,7 @@ const page = () => {
             </div>
           </div>
         </div>
+
         <div className="flex flex-col space-y-4">
           <div className="flex gap-2">
             <input type="checkbox"></input>

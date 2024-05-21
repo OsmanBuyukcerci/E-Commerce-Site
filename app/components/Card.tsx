@@ -1,40 +1,70 @@
 "use client";
 
-import React from "react";
+interface CardProps {
+  car_id: number;
+  car_color: string;
+  car_desc: string;
+  car_img_src: string;
+  car_name: string;
+  car_type: string;
+  car_value: number;
+  car_year: number;
+}
 
-const Card = () => {
+import React, { useEffect, useRef, useState } from "react";
+
+const Card = ({
+  car_id,
+  car_color,
+  car_desc,
+  car_img_src,
+  car_name,
+  car_type,
+  car_value,
+  car_year,
+}: CardProps) => {
+  const [href, setHref] = useState("");
+  const isInitialized = useRef(false);
+
+  useEffect(() => {
+    if (!isInitialized.current) {
+      setHref("/details/" + car_id);
+    }
+  }, []);
+
   return (
     <div className="rounded-lg shadow-md transition ease-in flex flex-col gap-2 items-center justify-center p-4 w-64  bg-gradient-to-br from-primary via-secondary to-primary text-white relative hover:scale-105 delay-75">
       <div className="flex">
-        {/* Product Image */}
-        <img
-          className="w-full"
-          src="https://i5.walmartimages.com/seo/Great-Value-Milk-Whole-Vitamin-D-Gallon-Plastic-Jug_6a7b09b4-f51d-4bea-a01c-85767f1b481a.86876244397d83ce6cdedb030abe6e4a.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
-        ></img>
+        {/* Car Image */}
+        <img className="w-full" src={car_img_src}></img>
       </div>
 
-      {/* Product Name */}
+      {/* Car Name */}
       <div className="w-full text-left text-lg font-bold line-clamp-1">
-        Milk
+        {car_name}
       </div>
 
-      {/* Product Description */}
+      {/* Car Description */}
       <div>
-        <p className="line-clamp-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus laboriosam impedit quaerat est sint ratione repellat
-          itaque delectus dolore at architecto perspiciatis iste, voluptatum
-          blanditiis enim aut tempore laborum sequi?
-        </p>
+        <p className="line-clamp-4">{car_desc}</p>
+        <p>Type: {car_type}</p>
+        <p>{car_year}</p>
+        <p>Color: {car_color}</p>
       </div>
 
       <div className="flex w-full m-2 items-center">
-        {/* Price */}
-        <div className="flex w-full justify-start text-lg font-bold">3$</div>
+        {/* Vakye */}
+        <div className="flex w-full justify-start text-lg font-bold">
+          {car_value}$
+        </div>
 
         {/* Buttons */}
         <div className="flex gap-4 *:font-bold *:p-1 *:rounded-lg">
-          <a href="#" className="underline hover:no-underline">
+          <a
+            id="details-link"
+            href={href}
+            className="underline hover:no-underline"
+          >
             Details
           </a>
         </div>
